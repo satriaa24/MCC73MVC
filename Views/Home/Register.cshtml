@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	ViewData["Title"] = "Form Register";
+	Layout = "_Layout";
+}
+
+<h2> @ViewData["Title"]</h2>
+<body>
+	<div class="table-primary">
+		<table class="table align-items-center mb-0">
+			<br>
+			<button type="button" class="btn btn-primary" position:relative;" data-bs-toggle="modal" data-bs-target="#register">
+				Tambah Data
+			</button>
+			<p>
+			<thead>
+				<tr>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">NIK</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">First Name</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Last Name</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Gender</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Email</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Role Name</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Division Name</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Department Name</th>
+					<th class="text-uppercase text-secondary text-xs font-weight-bolder ">Action</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+
+	<!-- Modal login -->
+	<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Form Login</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-black">
+					<div class="form-group">
+						<label for="NIK">NIK</label>
+						<input type="text" name="text" placeholder="Masukkan NIK" class="form-control" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="fn">First Name</label>
+						<input type="text" name="text" placeholder="Masukkan First Name" class="form-control" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="ln">Last Name</label>
+						<input type="text" name="text" placeholder="Masukkan Last Name" class="form-control" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="gen">Gender</label>
+						<select class="form-select" aria-label="Default select example">
+							<option selected disabled class="opacity-50">Masukkan Gender</option>
+							<option value="1">Male</option>
+							<option value="2">Female</option>
+							<option value="3">Other</option>
+						</select>
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" name="text" placeholder="Masukkan Email" class="form-control" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="rn">Role Name</label>
+						<input type="text" name="text" placeholder="Masukkan Role Name" class="form-control" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="DivName">Division Name</label>
+						<input type="text" name="text" placeholder="Masukkan Division Name" class="form-control" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="DepName">Department Name</label>
+						<input type="text" name="text" placeholder="Masukkan Department Name" class="form-control" />
+					</div>
+					<br>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" value="create">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				<!-- End Modal -->
+</body>
+
+
